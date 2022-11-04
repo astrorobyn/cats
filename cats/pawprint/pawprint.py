@@ -15,7 +15,10 @@ from .connect import PawprintFromFormat, PawprintRead, PawprintToFormat, Pawprin
 
 # class densityClass: #TODO: how to represent densities?
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> updating before switching forks
 class Footprint2D:
     def __init__(self, vertex_coordinates, footprint_type, stream_frame=None):
         if footprint_type == "sky":
