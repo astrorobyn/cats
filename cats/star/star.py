@@ -11,7 +11,19 @@ dtypes_dict = {
 	'crossmatches':dict(), #dictionary to store IDs in other surveys
 
 	#phase space
-	'w': {}#dict of phase space coordinates
+	'ra': 'f8',
+	'ra_err': 'f8',
+	'dec': 'f8',
+	'dec_err': 'f8',
+
+	'parallax': 'f8',
+	'parallax_err': 'f8',
+
+ 
+
+	'reflex_correction': 'f8', #per-star correction for solar reflex motion
+
+
 	'w_uncert': {}#dictionary of uncertainties per coordinate
 	#todo: add function to convert w to SkyCoord
 	#todo: bring in pyia to account for transformations to uncertainties
@@ -50,9 +62,11 @@ dtypes_dict = {
 		'alpha': ['s19']
 		'variability': ['s19']
 		'extinction': ['s19']
-	}
-
-	#TODO: membership likelihoods
+	},
+	#derived
+	'phi1': 'f8',
+	'phi2': 'f8'
+	#TODO: membership likelihoods (also derived)
 
 }
 
